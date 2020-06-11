@@ -1,11 +1,15 @@
 import unittest
 from fixtures import page
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 class MyTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-       cls.driver = webdriver.Firefox()
+       #cls.chrome_options = Options()
+       #cls.chrome_options.add_argument("--headless")
+       #cls.driver = webdriver.Chrome(options=cls.chrome_options)
+       cls.driver = webdriver.Firefox(executable_path="../lib/drivers/geckodriver")
        cls.driver.get("https://www.tmsandbox.co.nz/")
        cls.get_All_UsedCar_Brands(cls)
 
