@@ -25,7 +25,7 @@ From CommandLine
    
  **TroubleShooting**:  
 1)Driver : The gecko driver is already in .\TradeMeTest\lib\drivers folder which it references in test.  
-If the test fails because of driver instanciation,please check replace it with compatable driver version to your browser version  
+If the test fails because of driver instanciation,please replace existing driver with a compatable one to your browser version.You can find Firefox drivers at https://github.com/mozilla/geckodriver/releases.  
   
 Tip:  
 You can comment out the Firefox webdriver instantiation line and uncomment the headless browser lines if you do not want the hassle of    downloading drivers or dont want to watch the browser as test executes.  
