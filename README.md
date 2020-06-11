@@ -1,21 +1,33 @@
 # TradeMeTest
-This Project includes tests againt TradeMe(Sandbox) Used Cars Page to get available used car brands,count
-and also checks if certain brands of cars are available or not.
+This Project includes tests againt TradeMe(Sandbox-https://www.tmsandbox.co.nz/) Used Cars Page to get available used car brands,count
+and also checks if certain brands of cars are available.
+These tests are run on windows 10 OS and would expect similar steps in other OS as well. 
  
 **SETUP**
 The following are required to run the tests:
-1)Python 3.5 or higher. (This test was executed in 3.8 version)
-2)Selenium 3.14
- Install selenium by running command 'pip install selenium' in command prompt
- 
+1)Python 3.5 or higher.Add the python folder and Scripts folder path to Path variable (This test was executed in 3.8 version)
+2)Selenium 3 or higher
+ Install selenium by running command 'pip install selenium' in command prompt (if its not already installed in the system)
+3)Download relevant driver and put tha driver folder in Path variable (This test was executed in Firefox and headless chrome)
+ (you can download firefox drivers from https://github.com/mozilla/geckodriver/releases)
  
  **RUN**
- Checkout the branch in your local or to an IDE.
+From IDE:
+Download or checkout the branch.
+Load the project into and IDE(IntelliJ etc.)
+Run the tests
+(OR)
+From CommandLine
  1)Open CMD
  2)Go to the Project directory (i.e TradeMeTest)
- 3)Run python -m unittest discover
+ 3)Run below command
+  python -m unittest discover
  
- OR
+ Viola! the test excutes and gives the results
  
- 1)Checkout project into an IDE.Import dependencies
- 2)Hit the Run button
+ **TroubleShooting**:
+1)Driver : The gecko driver is already in .\TradeMeTest\lib\drivers folder which it references in test.
+If the test fails because of driver instanciation,please check replace it with compatable driver version to your browser version
+
+Tip:
+You can comment out the Firefox webdriver instantiation line and uncomment the headless browser lines if you do not want the hassle of downloading drivers or dont want to watch the browser as test executes.
