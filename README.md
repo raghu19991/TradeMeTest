@@ -8,8 +8,6 @@ The following are required to run the tests:
 1)Python 3.5 or higher.Add the python folder and Scripts folder path to Path variable (This test was executed in 3.8 version)  
 2)Selenium 3 or higher  
  Install selenium by running command 'pip install selenium' in command prompt (if its not already installed in the system)  
-3)Download relevant driver and put tha driver folder in Path variable (This test was executed in Firefox and headless chrome)  
- (you can download firefox drivers from https://github.com/mozilla/geckodriver/releases)  
  
  **RUN**  
 From IDE:  
